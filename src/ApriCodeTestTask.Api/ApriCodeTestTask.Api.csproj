@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0-preview.7.21378.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0-preview.7.21378.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ApriCodeTestTask.BusinessLogic\ApriCodeTestTask.BusinessLogic.csproj" />
+        <ProjectReference Include="..\ApriCodeTestTask.Core\ApriCodeTestTask.Core.csproj" />
+        <ProjectReference Include="..\ApriCodeTestTask.Persistence.SqlServer\ApriCodeTestTask.Persistence.SqlServer.csproj" />
+        <ProjectReference Include="..\ApriCodeTestTask.Persistence\ApriCodeTestTask.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
